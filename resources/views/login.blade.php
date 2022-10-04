@@ -9,18 +9,20 @@
             <h2 class="p-3">Login</h2>
           </div>
           <div class="card-body">
-            <form>
+
+            <form action="login" method="Post">
+                @csrf
               <div class="mb-4">
                 <label for="username" class="form-label">Username/Email</label>
-                <input type="text" class="form-control" id="username" />
+                <input type="text" class="form-control" id="username" name="email" />
               </div>
               <div class="mb-4">
                 <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" />
+                <input type="password" class="form-control" id="password" name="password" />
               </div>
                
               <div class="d-grid">
-                <button type="submit" class="btn text-light main-bg">Login</button>
+                <button type="submit" class="btn btn-primary text-light main-bg">Login</button>
               </div>
             </form>
           </div>
